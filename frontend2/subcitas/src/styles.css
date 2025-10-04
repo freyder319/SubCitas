@@ -1,0 +1,37 @@
+:root {
+    /* Turquesa y Acabados */
+    --primary-color: #00bcd4;     
+    --primary-dark: #008fa0;      
+    --accent-color: #00d4aa;      
+    
+    /* Fondos y Texto */
+    --background-light: #e6f7ff;  /* Fondo azul suave para el chat AURA */
+    --background-dark: #ffffff;   /* Blanco puro para el Inicio y la caja de chat */
+    --text-color: #2c3e50;        
+    
+    /* Detalles y Sombras */
+    --border-color: #c0e0e3;      
+    --aura-message-bg: #cceeff;   
+    --user-message-bg: #d4f8e6;   
+    --shadow-light: rgba(0, 0, 0, 0.25);
+}
+
+/* 🛑 REGLAS GLOBALES PARA MANTENER EL INICIO BLANCO 🛑 */
+
+/* Aseguramos que BODY tenga el color blanco por defecto (Inicio) */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-dark) !important; /* Blanco por defecto */
+}
+
+/* app-root debe ser transparente para que el body se vea */
+app-root {
+    display: block;
+    height: 100%;
+    background-color: transparent !important;
+}
